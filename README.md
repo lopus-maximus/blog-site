@@ -50,7 +50,7 @@ yarn dev
 ### Project Structure
 
 ├── app\
-│ ├── recipe\
+│ ├── content\
 │ │ └── slug\
 │ │ └── page.js\
 │ ├── globals.css\
@@ -62,13 +62,13 @@ yarn dev
 │ ├── SearchBar.js\
 │ └── SearchView.js\
 |\
-├── recipes\
-│ ├── apple_pie.md\
-│ ├── banana_bread.md\
-│ ├── blueberry_scones.md\
-│ ├── chocolate_chip_cookies.md\
-│ ├── cinnamon_rolls.md\
-│ └── lemon_poppy_seeds_muffins.md\
+├── material\
+│ ├── sample1.md\
+│ ├── sample2.md\
+│ ├── sample3.md\
+│ ├── sample4.md\
+│ ├── sample5.md\
+│ └── sample6.md\
 │\
 ├── utils\
 │ └── getPostMetadata.js\
