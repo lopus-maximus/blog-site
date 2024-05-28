@@ -13,7 +13,7 @@ export default function SearchView(props) {
       <div className="postsContainer">
         {postMetadata
           .filter((val) => {
-            return val.title.includes(searchValue);
+            return val.title.toLowerCase().includes(searchValue.toLowerCase());
           })
           .map((post, postIndex) => {
             return <PostCard key={postIndex} post={post} />;
