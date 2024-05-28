@@ -6,7 +6,7 @@ import path from "path";
 import matter from "gray-matter";
 
 function getPostContent(slug) {
-  const folder = "recipes/";
+  const folder = "material/";
   const file = path.join(folder, slug + ".md");
   const content = fs.readFileSync(file, "utf8");
 
@@ -15,18 +15,18 @@ function getPostContent(slug) {
 }
 
 export const generateStaticProps = async () => {
-  const posts = getPostMetadata("recipes");
+  const posts = getPostMetadata("material");
   return posts.map((post) => ({ slug: post.slug }));
 };
 
 export async function generateStaticPaths({ params }) {
   const id = params?.slug ? " ⋅ " + params?.slug : "";
   return {
-    title: `The Bubbly Baker ${id.replace("_", " ")}`,
+    title: `The Blog Site ${id.replace("_", " ")}`,
   };
 }
 
-export default function RecipePage(props) {
+export default function BlogPage(props) {
   const slug = props.params.slug;
   const post = getPostContent(slug);
   console.log(post);

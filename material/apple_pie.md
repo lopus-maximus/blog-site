@@ -1,8 +1,8 @@
 ---
-title: "Sample Blog Post (Apple Pie)"
+title: "Sample Blog Post"
 date: "2024-05-01"
 author: "John Doe"
-description: "This is a sample blog post for the Next.js assignment. It contains the recipe for apple pie"
+description: "This is a sample blog post for the Next.js assignment."
 ---
 
 # Classic Apple Pie
